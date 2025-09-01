@@ -25,7 +25,7 @@ interface Task {
 }
 
 export default function HomePage() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   const isDark = colorScheme === "dark";
 
   const [tasks, setTasks] = useState<Task[]>([
